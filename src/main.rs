@@ -1,8 +1,8 @@
 fn main() {
-    in_array(["sd"], ["a"]);
+    in_array(&["sd"], &["a"]);
 }
 fn in_array(arr_a: &[&str], arr_b: &[&str]) -> Vec<String> {
-    let answer: Vec<String> = Vec::new();
+    let mut answer: Vec<String> = Vec::new();
 
     for i in arr_b.iter() {
         for j in arr_a.iter() {
