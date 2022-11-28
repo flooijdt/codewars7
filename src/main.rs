@@ -2,11 +2,14 @@ fn main() {
     in_array(["sd"], ["a"]);
 }
 fn in_array(arr_a: &[&str], arr_b: &[&str]) -> Vec<String> {
-    let toda = String::from("tifoide");
-    let part = String::from("oide");
+    let answer: Vec<String> = Vec::new();
 
-    if toda.contains(part) {
-        println!("contem carai");
+    for i in arr_b.iter() {
+        for j in arr_a.iter() {
+            if i.contains(j) {
+                answer.push(j.to_string());
+            }
+        }
     }
-    Vec::new([toda])
+    answer
 }
